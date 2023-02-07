@@ -1,2 +1,9 @@
 @import './common';
-@import './example';
+@import 'partials/header/header';
+@import 'partials/hero/hero';
+@import 'partials/about/about';
+@import 'partials/tours/tours';
+@import 'partials/feedback/feedback';
+@import 'partials/gallery/gallery';
+@import 'partials/questions/questions';
+@import 'partials/footer/footer';
