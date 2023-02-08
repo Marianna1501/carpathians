@@ -1,3 +1,69 @@
 <header class="header">
-    <div class="container"></div>
+    <div class="container">
+        <nav class="nav">
+
+            <a class="nav__logolink" href="./index.html#header">
+                <!-- <svg class="nav__logolink--svg" width="44" height="44">
+                    <use href="./images/icons.svg#icon-logo" />
+                </svg>
+             </a> -->
+
+                <picture>
+                    <source media="(max-width:767px)" srcset="
+                          ./images/mob/header/logo@x1.png  44w,
+                          ./images/mob/header/logo@x2.png 88w,
+                          ./images/mob/header/logo@x3.png 132w
+                        " sizes="(max-width:767px ) 44px,100vw" />
+                    <source media="(min-width:768px )" srcset="
+                          ./images/desk/header/logo@x1.png  72w,
+                          ./images/desk/header/logo@x2.png 144w,
+                          ./images/desk/header/logo@x3.png 216w
+                        " sizes="(min-width:768px ) 72px,100vw" />
+                    <img class="nav__logo" src="./images/desk/header/logo@x1.png" alt="Логотип" />
+                </picture>
+            </a>
+            <div class="nav__wrapper" data-menu>
+                <ul class="nav__list list">
+                    <li class="nav__item">
+                        <a class="nav__link link" href="./index.html#about">Про нас</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link link" href="./index.html#tours">Тури</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link link" href="./index.html#feedback">Відгуки</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link link" href="./index.html#gallery">Галерея</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link link" href="./index.html#footer">Контакти</a>
+                    </li>
+                </ul>
+                <div class="social list">
+                    <a class="social__link link" href="" target="_blank">
+                        <svg class="nav__social--svg" width="24" height="24">
+                            <use href="./images/icons.svg#icon-telegram" />
+                        </svg>
+                    </a>
+                    <a class="social__link link" href="" target="_blank">
+                        <svg class="nav__social--svg" width="24" height="24">
+                            <use href="./images/icons.svg#icon-insta" />
+                        </svg>
+                    </a>
+                    <a class="social__link link" href="" target="_blank">
+                        <svg class="nav__social--svg" width="24" height="24">
+                            <use href="./images/icons.svg#icon-facebook" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <button class="btn btn__menu" type="button" data-menu-button>
+            <svg width="22" height="22">
+                <use class="burger" href="./images/icons.svg#icon-burger" />
+                <use class="cross" href="./images/icons.svg#icon-cross" />
+            </svg>
+        </button>
+    </div>
 </header>
